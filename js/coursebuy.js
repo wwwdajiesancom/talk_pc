@@ -18,7 +18,7 @@ $(function(){
         type = 0;
         platType = 2;
         partner = 2;
-        _getcourseData(type,platType);
+        _getlkscourseData(type,platType);
     }else{
         type = 1;
         platType = 1;
@@ -31,6 +31,50 @@ $(function(){
         Independence = 2;
     }else{
         Independence = 1;
+    }
+    function _getlkscourseData(type,platType){
+        $.ajax({
+            url: apiUrl+"/openapi/pbstalkcourse/talkcourselist?type="+type+"&platType="+platType,
+            type: 'POST',
+            dataType: 'json',
+            data:{},
+            success: function (data) {
+                if(data.success == true){
+                    var result = data.result;
+                    if(result!== undefined && result.length > 0){
+                    	for(var i=0;i<result.length;i++){
+	                        var price = result[i].price;
+	                        var duration = result[i].duration;
+                            var hours = result[i].hours;
+                            var hoursExtra = result[i].hoursExtra;
+                            var uniqId = result[i].uniqId;
+                            var courseName = result[i].name;
+                            var courseForm = result[i].courseForm;
+                            var courseNameExtra = result[i].nameExtra;
+                            var hoursHtml = hours + "课时";
+                            var courseNameHtml = courseName;
+                            var courseFormHtml = courseForm;
+                            if(hoursExtra!=null&&hoursExtra!='')hoursHtml = hoursHtml + hoursExtra;
+                            var durationHtml = (duration == 0) ? '<b id="courseDuration">永久有效</b>' : '<b id="courseDuration">'+duration+'</b>个月';
+	                        var html = '<tr>'+
+									'<td><b id="courseName">'+uniqId+'</b></td>'+
+                                    '<td>'+hoursHtml+'</td>'+
+                                    '<td>'+courseNameHtml+'</td>'+
+                                    '<td>'+courseFormHtml+'</td>'+
+									'<td><b id="coursePrice">'+price+'</b></td>'+
+									'<td>'+durationHtml+'</td>'+
+									'<td class="buy_td">'+
+										'<div class="goodsBtn" uniqId="'+uniqId+'">'+'提交订单</div>'+
+									'</td>'+
+								'</tr>';
+	                        $('.om_course_table tbody').append(html);
+	                    }
+                    }
+                }else{
+                	console.log(data.msg);
+                }
+            }
+        });
     }
     function _getcourseData(type,platType){
         $.ajax({
@@ -56,7 +100,7 @@ $(function(){
 									'<td class="buy_td">'+
 										'<div class="goodsBtn" uniqId="'+uniqId+'">'+'提交订单</div>'+
 									'</td>'+
-								'</tr>'
+								'</tr>';
 	                        $('.om_course_table tbody').append(html);
 	                    }
                     }
@@ -65,7 +109,7 @@ $(function(){
                 }
             }
         });
-    };
+    }
     function _getflbcourseData(){
         $.ajax({
             url: apiUrl+"/openapi/pbstalkcourse/talkcourselist?type=2",
@@ -99,7 +143,7 @@ $(function(){
                 }
             }
         });
-    };
+    }
     // 弹出购买弹框
 	$('.course_table tbody').on('click','.goodsBtn',function(){
 		payObj = {};
@@ -142,16 +186,16 @@ $(function(){
 					window.wxc.xcConfirm('错误，请重试', window.wxc.xcConfirm.typeEnum.info);
 				}
             }
-        })
-    })
+        });
+    });
 
     // 关闭弹窗
 	$('.orderclose').click(function(){
         funClose();
-    })
+    });
     $('#buyorder_form_mask').click(function(){
         funClose();
-    })
+    });
 
     function funClose(){
         $("#userMobile").css({border:"1px solid #333"});
@@ -181,7 +225,7 @@ $(function(){
         payObj.Mobile = Mobile;
         $("#userMobile").css({border:"1px solid #333"});
         $("#userMobiley").css("display","none");
-    })
+    });
     
     // 验证用户名
     $("#userId").on('blur',function(){
@@ -202,13 +246,13 @@ $(function(){
         payObj.userId = userId;
         $("#userId").css({border:"1px solid #333"});
         $("#userIdy").css("display","none");
-    })
+    });
     
     // 备注信息
 	$("#remarkInfo").on('blur',function(){
         // payObj.remark = escape($(this).val().trim());
         payObj.remark = $(this).val().trim();
-    })
+    });
 
     // 支付宝按钮
 	$('#buy_queren_zhifubao').click(function(){
@@ -224,7 +268,7 @@ $(function(){
         }else{
         	return false;
         }
-    })
+    });
     
     // 支付方式移入移出
 	$(".btn_buy").mousemove(function(){
@@ -307,6 +351,6 @@ $(function(){
     	$("#pay_confirm_error").hide();
         $("#pay_confirm_suc").show();
         $("#pay_confirm_box").hide();
-    })
+    });
 
 });

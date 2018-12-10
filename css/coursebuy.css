@@ -5,6 +5,12 @@ body,html{
 
 /*banner*/
 
+.fb_teacher_list_title_likeshuo{
+    height: 510px;
+    background : url(../images/likeshuo_banner.jpg) center center no-repeat;
+  
+  }
+
 .fb_teacher_list_title{
   height: 510px;
   background : url(../images/banner.jpg) center center no-repeat;

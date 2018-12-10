@@ -1,0 +1,21 @@
+#fb_footer {
+  background-color: #000;
+  padding: 24px 0 77px 0;
+}
+.footer_content .footer_message p{
+  line-height: 28px;
+  color: #d2d2d2;
+  font-size: 16px;
+}
+.footer_content .footer_message p span {
+  display: inline-block;
+  white-space: pre-line;
+  vertical-align: top;
+}
+.footer_content .footer_wx {
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+  background-color: #fff;
+  border:2px solid #fff;
+}

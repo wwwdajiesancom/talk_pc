@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鹏博士英语</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/xcConfirm.css">
+	<link rel="stylesheet" href="/css/coursebuy.css">
+  <link rel="stylesheet" href="/css/fb_header.css">
+  <link rel="stylesheet" href="/css/fb_footer.css">
+
+	<!-- <link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/default/css/currency.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/css/feibo.share.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/css/general-file.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/default/css/fb_footer.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/default/css/fb_header.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/default/css/main.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/default/css/form_modal.css">
+	<link rel="stylesheet" href="http://bjpbs.121learn.cn/static/schools/school_site/css/school_mould.css"> -->
+  <style>
+  </style>
+</head>
+<body>
+<!-- 头部 -->
+  <header id="fb_header">
+      <div class="header_inner width_auto clearfix">
+          <div class="logo fl">
+              <img src="http://static02.121learn.com/FqMaT1R5_7RWikgeC1Zylet9TlCN" height="80">
+          </div>
+          <nav class="nav fr">
+              <div class="phone">
+                  <i></i>
+              </div>
+              <ul class="nav-title clearfix">
+                    <li height="">
+                        <a href="http://bjpbs.121learn.cn//t?host=bjpbs.121learn.cn/" target="_self">首页</a>
+                    </li>
+                    <li height="">
+                        <a href="http://bjpbs.121learn.cn//t/teacher_list?host=bjpbs.121learn.cn/" target="_self">教师列表</a>
+                    </li>
+                    <li height="">
+                        <a href="index.html" target="_self">课程体系</a>
+                    </li>
+                    <li height="">
+                        <a href="https://weidian.com/item.html?itemID=2210780105&amp;wfr=wxShare&amp;ifr=shopdetail&amp;spider_token=cbd7&amp;spider=seller.zx-shopdetail.5.1?host=bjpbs.121learn.cn/" target="_blank">在线购课</a>
+                    </li>
+                    <li height="">
+                        <a href="http://bjpbs.121learn.cn//t/about_us?host=bjpbs.121learn.cn/" target="_self">关于我们</a>  
+                    </li>
+                    <li height="">
+                        <a href="http://bjpbs.121learn.cn/?host=bjpbs.121learn.cn/" target="_self">登陆</a>
+                    </li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <div class="fb_content fb_teacher_list_title"></div>
+
+	<div class="tableBox">
+		<table class="course_table">
+			<tbody>
+				<tr class="course_table_th">
+					<td class="course_table_width">名称</td>
+					<td class="course_table_width">价格</td>
+					<td class="course_table_width">课时</td>
+					<td class="course_table_width">有效期</td>
+					<td class="course_table_width buy_td hui">购买</td>
+				</tr>
+				<!-- <tr>
+					<td>名称</td>
+					<td>12888元</td>
+					<td>180课时</td>
+					<td>12个月</td>
+					<td class="buy_td">
+						<div class="goodsBtn" data-bid='36'>购买</div>
+					</td>
+				</tr>
+				<tr>
+					<td>名称</td>
+					<td>12888元</td>
+					<td>180课时</td>
+					<td>12个月</td>
+					<td class="buy_td">
+						<div class="goodsBtn" data-bid='36'>购买</div>
+					</td>
+				</tr>
+				<tr>
+					<td>名称</td>
+					<td>12888元</td>
+					<td>180课时</td>
+					<td>12个月</td>
+					<td class="buy_td">
+						<div class="goodsBtn" data-bid='36'>购买</div>
+					</td>
+				</tr>
+				<tr>
+					<td>名称</td>
+					<td>12888元</td>
+					<td>180课时</td>
+					<td>12个月</td>
+					<td class="buy_td">
+						<div class="goodsBtn" data-bid='36'>购买</div>
+					</td>
+				</tr> -->
+			</tbody>
+		</table>
+	</div>
+
+	<!-- 购买下订单 -->
+	<div id="buyorder_form" class="buyorder_form" style="display: none;">
+      <div class="orderclose">×</div>
+      <div class="buyorder_form_title">确认订单</div>
+      <div class="line"></div>
+      <div class="buyorder_form_rel">
+        <form id="buy_form" name="buy_form" method="post" action="index.php-c=pay&amp;a=payment.html" class="buy_form">
+          <p>
+            <label for="orderNum" class="buyorder_form_lable">订单编号：</label>
+            <input id="orderNum" name="orderNum" type="text" disabled="disabled">
+            <!-- <input id="out_trade_no" name="WIDout_trade_no" type="hidden" value="">
+            <input id="course_id" name="course_id" type="hidden" value=""> -->
+          </p>
+          <p>
+            <label for="orderName" class="buyorder_form_lable">商品名称：</label>
+            <input id="orderName" name="orderName" type="text" disabled="true">
+            <!-- <input id="subject" name="WIDsubject" type="hidden" value=""> -->
+          </p>
+          <p>
+            <label for="orderPrice" class="buyorder_form_lable">付款金额：</label>
+            <input id="orderPrice" name="orderPrice" type="text" disabled="true">
+            <!-- <input id="total_fee" name="WIDtotal_fee" type="hidden" value=""> -->
+            <!-- <span style="text-indent: 234px; font-size: 16px;color: #e2403e; position:relative;"><img style="position:absolute; top:2px; right:-28px; width:20px;" src="./images/youhui.png">试听当天报名，可享课程优惠，详情请致电<a href="tel://4008787276" style="color: #e2403e;font-size:16px;">400-8787-276</a></span> -->
+          </p>
+		  <p class="enter_info">
+            <label for="userId" class="buyorder_form_lable">
+            	<span>*&nbsp;</span> 用户名：
+            </label>
+            <input id="userId" type="text" placeholder="必填（不能为空）" class="user_enter" maxlength="50">
+             <span id="userIdy"  class="user_error">请输入用户名!</span>
+          </p>
+          <p class="enter_info">
+            <label for="orderNum" class="buyorder_form_lable">
+            	<span>*&nbsp;</span>手机号码：
+            </label>
+            <input id="userMobile" type="text" placeholder="必填（支付信息将以短信形式发送至您的手机）" class="user_enter" maxlength="11">
+             <span id="userMobiley"  class="user_error">请输入有效的手机号码!</span>
+          </p>
+
+          <p class="enter_info">
+            <label for="remarkInfo" class="buyorder_form_lable">备注信息：</label>
+            <!-- <input name="WIDremarks" id="remarkInfo" type="text" onfocus="this.value=''"/>-->
+            <input id="remarkInfo" type="text" placeholder="选填（可填写您对本课程的建议，要求等）" maxlength="250">
+          </p>
+          <!--<p style="text-indent: 194px; font-size: 12px;color: #999999;height:36px;">注意：备注信息，选填（可填写您对本课程的建议，要求等）</p>-->
+          <p class="agree">
+          	<span class="agree_icon" >
+          		<i class=""></i>
+          	</span>
+          	<span class="agree_text">我已阅读并同意
+          		<a href="agreement.html" target="_blank"> 《鹏博士英语课程服务协议》
+          		</a>
+          	</span>
+          </p>
+          <div class="smyclearfix">
+              <a id="buy_queren_zhifubao" class="left btn_buy btn_buy1" target="_blank">支付宝支付</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="buyorder_form_mask" class="buyorder_form_mask" style="display: none;">  </div>
+
+	<!-- 支付完成 -->
+	<div class="pay_confirm_box" id="pay_confirm_box" style="display: none;">
+        <div class="pay_confirm_suc" id="pay_confirm_suc">
+            <div class="pay_confirm_title">支付结果确认</div>
+            <div class="line"></div>
+            <div class="pay_confirm_text">
+                <p>请您到新打开支付页面上进行支付，支付完成前请不要关闭该窗口，支付完成请点击“<span class="text_red">已完成支付</span>”按钮关闭窗口。</p>
+            </div>
+            <div class="pay_confirm_btn">
+                <button id="pay_suc" class="pay_suc">已完成支付</button>
+                <button id="pay_error" class="pay_error">支付遇到问题</button>
+            </div>
+        </div>
+        <div class="pay_confirm_error" id="pay_confirm_error" style="display: none;">
+            <div class="pay_confirm_title">支付遇到问题</div>
+            <div class="line"></div>
+            <div class="orderclose" id="orderclose">×</div>
+            <div class="pay_error_info">
+                <h3>您的订单尚未完成付款，可能是以下原因：</h3>
+                <p>1.如果您在支付宝、微信或网银付款未成功，请再尝试一次。在确认订单付款页面点击</p>
+                <p class="pay_bottom">“返回重新提交”或者点此<a id="pay_error_a" target="_blank">重新付款</a></p>
+                <p>2.如果您已经支付成功但是看到该页面，请不要着急，有可能是支付平台与我们的通讯</p>
+                <p class="pay_bottom">延迟，请过5分钟再在官网右侧输入手机号进行订单查询。</p>
+                <p>3.如果付款超过30分钟后购买的课程还未生效，请联系客服<a href="tel://4008787276">400-8787-276</a>，谢谢！</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer id="fb_footer">
+        <div class="footer_content width_auto clearfix">
+            <div class="footer_message fl">
+              <p>电话(Tel) :
+                    010-52206372（工作日座机/节假日手机）
+                    15811016915
+                </p>
+              <p>邮箱(Mail) : bufanlong@btte.net</p>
+                <p>地址 : <span>北京市东城区和平里东街11号航星科技园3号楼1层</span></p>
+                <p>QQ :
+                    16128059
+                </p>
+            </div>
+            <div class="footer_wx fr" style="display: none;">
+                <img src="http://static02.121learn.com" onerror="this.parentNode.style.display = 'none';" width="100%" height="100%" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery.min.js"></script>
+    <!-- <script src="http://bjpbs.121learn.cn/static/schools/school_site/jquery.min.js"></script> -->
+	<!-- <script src="http://bjpbs.121learn.cn/static/schools/school_site/default/js/idangerous.swiper.min.js"></script> -->
+	<!-- <script src="http://bjpbs.121learn.cn/static/schools/school_site/default/js/header.js"></script>
+	<script src="http://bjpbs.121learn.cn/static/schools/school_site/default/js/to_top.js "></script> -->
+    <script src="/js/xcConfirm.js"></script>
+    <script src="/js/coursebuy.js"></script>
+</body>
+</html>

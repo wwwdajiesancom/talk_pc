@@ -1,0 +1,108 @@
+.school_inner {
+     position: relative;
+ }
+.title_list img{
+    vertical-align: top;
+}
+.fixed_right {
+    position: fixed;
+    width: 48px;
+    height: 200px;
+    top: 50%;
+    right: 0;
+    z-index: 100;
+}
+.fixed_right > .trial {
+    position: absolute;
+    top: 56px;
+    width: 48px;
+    height: 48px;
+    background: #5c5c5c url('../images/trial.png') no-repeat 10px 12px;
+    cursor: pointer;
+}
+.fixed_right > .trial > a {
+    display: none;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+}
+.fixed_right > .trial:hover a {
+    display: block;
+    background-color: #5c5c5c;
+}
+.fixed_right > .qr_code {
+    position: absolute;
+
+}
+.fixed_right > .qr_code > p {
+    display: none;
+    color: red;
+}
+.fixed_right > .qr_code:hover {
+    top: -78px;
+    right: 0;
+}
+.fixed_right > .qr_code:hover p {
+    display: block;
+}
+.fixed_right > .qr_code:hover img {
+    width: 102px;
+}
+.fixed_right > .fb_toTop {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 114px;
+    left: 0;
+    background: #5c5c5c url('../images/go_top.png') no-repeat center;
+}
+.fixed_right > .fb_toTop > p {
+    display: none;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 24px;
+}
+.fixed_right > .fb_toTop:hover p {
+    display: block;
+    background-color: #5c5c5c;
+}
+
+.content_img {
+    margin-bottom: -6px;
+}
+
+.fixed_right_serve {
+    position: fixed;
+    width: 163px;
+    height: 194px;
+    background: #5c5c5c url('../images/trial.png') no-repeat 10px 12px;
+    right: -110px;
+    top: 50%;
+    margin-top: -100px;
+    z-index: 10;
+    padding:0 0 0 57px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+.serve_box {
+    height: 45px;
+    line-height: 45px;
+}
+.serve_box p {
+    color: white;
+}
+.serve_box a {
+    display: block;
+}
+.serve_box a img {
+    margin-top: 10px;
+}
+.erweima_img_box {
+    width: 110px;
+    height: 106px;
+    padding:0 13px 10px 5px;
+}
+.fixed_right_serve:hover {
+    right: 0;
+}

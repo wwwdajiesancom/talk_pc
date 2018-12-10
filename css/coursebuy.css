@@ -1,0 +1,434 @@
+body,html{
+    min-width : 1024px;
+    overflow-x: auto;
+}
+
+/*banner*/
+
+.fb_teacher_list_title{
+  height: 510px;
+  background : url(../images/banner.jpg) center center no-repeat;
+
+}
+.fb_content{
+  width: 100%;
+}
+
+
+.fb_teacher_content_title{
+    text-align: center;
+}
+.fb_teacher_content_title span{
+    width: 78px;
+    height: 1px;
+    background: #22becb;
+    vertical-align: middle;
+}
+.fb_teacher_content_title span, .fb_teacher_content_title b, .fb_teacher_content_title h2{
+    display: inline-block;
+}
+.fb_teacher_content_title b {
+  margin:0 4px;
+  width: 7px;
+  height: 7px;
+  background-color: #22becb ;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.fb_teacher_content_title h2 {
+  margin:0 3px;
+  color: #22becb;
+  vertical-align: middle;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fb_teacher_content_text {
+  margin-top: 30px;
+}
+.fb_teacher_content_text h2 {
+  text-align: center;
+  font-size: 17px;
+  color: #22becb;
+}
+
+
+
+
+
+/*table列表*/
+.tableBox{
+	width: 100%;
+	padding: 30px 0 38px 0;
+	margin: 0 auto;
+    box-sizing : content-box !important;
+    -webkit-box-sizing : content-box !important;
+    background : url(../images/teacher_bg.jpg);
+
+}
+.ttBox{
+     box-sizing : content-box !important;
+    -webkit-box-sizing : content-box !important;
+}
+/*table{
+	border-collapse:collapse;
+}
+*/
+.course_table {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.course_table td {
+    height: 70px;
+    text-align: center;
+    font-size: 19px;
+    color: #382010;
+    border: 1px solid #382010;
+    background: #f8f3ef;
+    letter-spacing: 2px;
+    text-shadow: 0 0 0 #382010;
+}
+
+.course_table_th {
+    background: #fcdb8a;
+    border: 1px solid #382010;
+}
+
+.course_table_th td {
+    font-size: 22px;
+    background: none;
+}
+.saleCourse_table_th td{
+    font-size: 21px;
+}
+.course_table_width {
+    width: 210px;
+}
+
+.buy_td .goodsBtn {
+    display: inline-block;
+    width: 130px;
+    height: 44px;
+    background: #fcdb8a 28px 4px no-repeat;
+    font-size: 17px;
+    color: #382010;
+    border-radius: 6px;
+    line-height: 44px;
+    text-shadow: 0 0 0 #382010;
+    cursor: pointer;
+}
+.buy_td .goodsBtn:hover{
+    background-color: #ffcc00;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.discountNameClass{
+    color: red;
+    font-size: 17px;
+}
+
+
+/*购买下单*/
+
+.buyorder_form{
+    display:none; 
+    position:absolute;
+    left:0;
+    right:0; 
+    top: 0;
+    bottom: 0; 
+    margin:auto;
+    width:807px; 
+    height:715px; 
+    z-index: 9999999; 
+    background: #e7e7e7;border-radius: 8px;
+}
+.buyorder_form_mask{
+    width: 100%;
+    height: 100%; 
+    background: rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    display:none; 
+}
+.orderclose {
+    font-size: 41px;
+    color:#ccc;
+    position: absolute;
+    right:20px;
+    top:6px;
+    cursor: pointer;
+}
+.buyorder_form_title{
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    font-size: 29px;
+    text-align: center;
+    margin-top: 19px;
+}
+#buyorder_form .line{
+    height: 2px;
+    width:786px;
+    margin:0 auto;
+    background:#ccc;
+}
+
+.buyorder_form_rel{
+    width: 708px;
+    height: auto;
+    margin:0 auto;
+    margin-top: 35px;
+}
+.buyorder_form_rel p{
+    width: 100%;
+    height: 42px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+.buyorder_form_lable{
+    display: inline-block;
+    font-size: 20px;
+    color: #666;
+    padding-left: 28px;
+}
+
+
+
+#orderNum,#orderName,#courseNum{
+    color:#000;
+}
+#orderPrice{
+    color:#dd3836;
+    width: 420px;
+}
+
+#buy_form .enter_info{
+    height:80px;
+    /*margin-bottom: 10px;*/
+}
+/*.enter_info .buyorder_form_lable{
+    padding-left: 14px;
+    width: 114px;
+    text-align: right;
+}*/
+.user_enter{
+    border: 1px solid rgb(51, 51, 51);
+}
+.user_error{
+    display: none; 
+    text-indent: 158px; 
+    font-size: 14px; 
+    color: rgb(221, 56, 54); 
+    height: 30px; 
+    line-height: 30px;
+}
+.buyorder_form_lable span{
+    display:inline-block;
+    color: #fc5624; 
+    vertical-align: middle;
+}
+#userMobile,#userId{
+    width: 528px;
+    height:54px;
+    border:1px solid #999;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+#remarkInfo{
+    width: 528px;
+    height:54px;
+    border:1px solid #999;
+    border-radius: 8px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.buy_form input{
+    width: 402px;
+    height: 26px;
+    line-height: 28px;
+    font-size: 20px;
+    border: none;
+    background: #e7e7e7;
+}
+
+.agree{
+    text-indent: 32px; 
+    font-size: 16px; 
+    height: 30px;
+}
+.agree_icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    background: #e7e7e6;
+    border-radius: 2px;
+    top:4px;
+}
+
+.agree_icon i{
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background:url("../images/icon-chooseagree.png") no-repeat;
+    width: 21px;
+    height:20px;
+}
+.agree_text{
+    display: inline-block; 
+    text-indent: 20px;
+}
+.agree_text a{
+    color: #F3981C;
+}
+.display_agree_icon{
+   opacity: 0;
+}
+.btn_buy{
+	display: block;
+    width: 206px;
+    height: 62px;
+    line-height: 62px;
+    border-radius: 33px;
+    margin: 0 auto;
+    color:#fff;
+    font-size: 24px;
+    text-align: center;
+    background:#7f7f7f;
+    cursor: pointer;
+}
+.btn_buy1{
+    width:206px;
+    background:#23b1f5;
+}
+.btn_buy1_hover{
+    width:206px;
+    color:white !important;
+    background: #0e92c6;
+}
+
+/*支付完成*/
+.pay_confirm_box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    background:rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.pay_confirm_box .pay_confirm_suc{
+    width: 597px;
+    height: 526px;
+    background:#e7e7e7;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 2;
+}
+.pay_confirm_box .pay_confirm_title{
+    font-size: 34px;
+    color:#333;
+    padding-top: 45px;
+    padding-bottom: 26px;
+    text-align: center;
+}
+.pay_confirm_box .line{
+    height: 2px;
+    width: 573px;
+    margin: 0 auto;
+    background: #ccc;
+}
+.pay_confirm_box .pay_confirm_error .line{
+    height: 2px;
+    width: 786px;
+    margin: 0 auto;
+    background: #ccc;
+}
+.pay_confirm_box .pay_confirm_text{
+    padding:50px 75px 50px 72px;
+}
+.pay_confirm_box .pay_confirm_text p{
+    font-size: 24px;
+    color:#333;
+    line-height: 50px;
+}
+.pay_confirm_box .pay_confirm_text p .text_red{
+    color:#d83130;
+}
+.pay_confirm_box .pay_confirm_btn{
+    padding:0 62px;
+    text-align: center;
+}
+.pay_confirm_box button{
+    width: 206px;
+    height: 66px;
+    border:0;
+    background:rgba(0,0,0,0);
+    font-size: 24px;
+    color:#fff;
+    cursor: pointer;
+}
+.pay_confirm_box button.pay_suc{
+    background:#d83130;
+    border-radius: 33px;
+}
+.pay_confirm_box button.pay_error{
+    background:#c5c5c5;
+}
+.pay_confirm_box .pay_confirm_error{
+    width: 809px;
+    height: 526px;
+    background:#e7e7e7;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 2;
+    /* display: none; */
+}
+.pay_confirm_box .orderclose{
+    font-size: 41px;
+    color: #ccc;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+    cursor: pointer;
+}
+.pay_confirm_box .pay_error_info{
+    padding:38px 46px 0 52px;
+}
+.pay_confirm_box .pay_error_info h3{
+    font-weight: normal;
+    color:#d83130;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.pay_confirm_box .pay_error_info p{
+    color:#333;
+    font-size: 18px;
+    line-height: 40px;
+}
+.pay_confirm_box .pay_error_info p a{
+    color:#d83130;
+}
+.pay_confirm_box .pay_error_info p.pay_bottom{
+    margin-bottom: 17px;
+}
